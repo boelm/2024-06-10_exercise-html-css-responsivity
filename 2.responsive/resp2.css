@@ -1,0 +1,48 @@
+header {
+    min-height: 10vh;
+    article {
+        background-color: rgb(134, 8, 134);
+        /* width: 100%; */
+        min-height: 2rem;
+        border: 1px solid black;
+    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:0.5rem;
+}
+
+main {
+    width: 100%;
+    /* min-height: 70vh; */
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    article {
+        background-color: rgb(216, 96, 116);
+        width: 100%;
+        /* min-height: 100%; */
+        min-height: 20vh;
+    }
+}
+
+footer {
+    background-color: rgb(212, 228, 187);
+    min-height: 10vh;
+}
+
+@media screen and (max-width: 800px) {
+
+    header {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.2rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+}
