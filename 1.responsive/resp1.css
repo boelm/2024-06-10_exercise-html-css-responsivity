@@ -1,0 +1,51 @@
+header {
+    background-color: rgb(84, 2, 84);
+    min-height: 10vh;
+}
+
+main {
+    width: 100%;
+    margin: 0.5rem auto;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    
+    article.dark-pink{
+        
+        min-width: 10vw;
+        min-height: 10vh;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        div{
+            background-color: rgb(134, 8, 134);
+            min-height: 2rem;
+        }
+        
+    }
+    article.light-pink{
+        background-color: rgb(216, 96, 116);
+        min-width: 10vw;
+        min-height: 10vh;
+    }
+}
+
+footer {
+    background-color: rgb(212, 228, 187);
+    min-height: 10vh;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+      /* background-color: blue; */
+      /* display: flex;   */
+      flex-direction: column;
+      gap: 10rem;
+
+    }
+    article.dark-pink{
+        gap:0.1rem;
+    }
+  }
